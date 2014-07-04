@@ -14,3 +14,7 @@ RUN apt-get install -y git
 # install python and pip
 RUN apt-get install -y python-dev
 RUN apt-get install -y python-pip
+
+# Update pip and setuptools
+RUN pip install setuptools -U
+RUN pip install pip -U
