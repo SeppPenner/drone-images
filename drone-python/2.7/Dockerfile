@@ -18,3 +18,8 @@ RUN apt-get install -y python-pip
 # Update pip and setuptools
 RUN pip install setuptools -U
 RUN pip install pip -U
+RUN pip install wheel
+
+# Install some common used libraries
+RUN apt-get install -y libmysqlclient-dev
+RUN apt-get install -y libxslt1-dev
