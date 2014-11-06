@@ -1,9 +1,14 @@
 FROM ubuntu:12.04
 MAINTAINER Orne Brocaar <info@brocaar.com>
 
+ENV DEBIAN_FRONTEND noninteractive
+
 # update apt
 RUN apt-get update
 RUN apt-get upgrade -y
+
+# install en language pack
+RUN apt-get install -y language-pack-en
 
 # install build essentials
 RUN apt-get install -y build-essential
