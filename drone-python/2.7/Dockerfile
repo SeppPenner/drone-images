@@ -1,4 +1,4 @@
-FROM ubuntu:12.04
+FROM ubuntu:latest
 MAINTAINER Orne Brocaar <info@brocaar.com>
 
 ENV DEBIAN_FRONTEND noninteractive
